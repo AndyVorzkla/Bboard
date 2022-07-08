@@ -5,7 +5,7 @@ from .models import Bb, Rubric
 
 class BbAdmin(admin.ModelAdmin):
     # Лучше использовать для типов моделей с несколькими значащими полями
-    list_display = ('title', 'content', 'price', 'published',)
+    list_display = ('title', 'content', 'price', 'published', 'rubric',)
     # Присваивает именам гиперссылки для редактирования
     list_display_links = ('title', 'content',)
     search_fields = ('title', 'content',)
